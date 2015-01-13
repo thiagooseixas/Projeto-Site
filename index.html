@@ -41,25 +41,16 @@
 				</div><!--/.navbar-collapse -->
 			</div>
 		</div>
-
-		<section class="featured">
-			<div class="container"> 
-				<div class="row mar-bot40">
-					<div class="col-md-6 col-md-offset-3">
-						
-						<div class="align-center">
-							<i class="fa fa-flask fa-5x mar-bot20"></i>
-							<h2 class="slogan">Welcome to Amoeba</h2>
-							<p>
-							Lorem ipsum dolor sit amet, natum bonorum expetendis usu ut. 
-							Eum impetus offendit disputationi eu, at vim aliquip lucilius praesent. 
-							Alia laudem antiopam te ius, sed ad munere integre, ubique facete sapientem nam ut. 
-				
-							</p>	
-						</div>
+		<section id="principal" class="section" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row">
+					<div class="col-lg-12">
+							<div class="align-center">
+										<div class="principal pad-top40 pad-bot40 clearfix"></div>
+							</div>
 					</div>
-				</div>
 			</div>
+		</div>
 		</section>
 		
 		<!-- services -->
@@ -84,12 +75,12 @@
 						</p>
 					</div>
 				</div>
-			
+
 				<div class="col-lg-4" >
 					<div class="align-center">
 						<i class="fa fa-bolt fa-5x mar-bot20"></i>
 						<h4 class="text-bold">Customizable</h4>
-						<p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
+						<p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no.
 						Mei cu dicat voluptaria volumus.
 						</p>
 					</div>
@@ -129,12 +120,16 @@
 				<div class="row mar-bot40">
 					<div class="col-md-offset-3 col-md-6">
 						<div class="section-header">
-							<h2 class="section-heading animated" data-animation="bounceInUp">Our Team</h2>
-							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam.</p>
+							<h2 class="section-heading animated" data-animation="bounceInUp">Sobre</h2>
+							<p>
+								A VTinova é uma empresa de base tecnológica, especializada no desenvolvimento de hardware e software embarcado.
+								Com tecnologias e produtos próprios a VTinova atualmente concentra seus esforços em duas divisões estratégicas de negócio: o mercado de energia e o mercado de automação industrial.
+								A VTinova é uma empresa brasileira sediada em Manaus, capital do estado do Amazonas.
+								Uma das metas da VTinova é a colocação do Amazonas no cenário dos estados provedores de tecnologias nacionais. </p>
 						</div>
 					</div>
 				</div>
-
+					<!--
 					<div class="row align-center mar-bot40">
 						<div class="col-md-3">
 							<div class="team-member">
@@ -145,35 +140,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3">
-							<div class="team-member">
-								<figure class="member-photo"><img src="img/team/member2.jpg" alt="" /></figure>
-								<div class="team-detail">
-									<h4>Timothy Clark</h4>
-									<span>Web developer</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="team-member">
-								<figure class="member-photo"><img src="img/team/member3.jpg" alt="" /></figure>
-								<div class="team-detail">
-								<h4>Vicky Tan</h4>
-									<span>Web designer</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="team-member">
-								<figure class="member-photo"><img src="img/team/member4.jpg" alt="" /></figure>
-								<div class="team-detail">
-								<h4>Kevin Peterson</h4>
-									<span>UI designer</span>
-								</div>
-							</div>
-						</div>
 					</div>
-						
+						-->
 		</div>
 		</section>
 		<!-- /about -->
@@ -204,8 +172,8 @@
                         <div class="row">
                           <nav id="filter" class="col-md-12 text-center">
                             <ul>
-                              <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-                              <li><a href="#"  class="btn-theme btn-small" data-filter=".webdesign" >Web Design</a></li>
+                              <li><a href="#" class="current btn-theme btn-small" data-filter="*">Tudo</a></li>
+                              <li><a href="#"  class="btn-theme btn-small" data-filter=".webdesign" >Clientes</a></li>
                               <li><a href="#"  class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
                               <li ><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
                             </ul>
@@ -361,22 +329,22 @@
 							<form action="contact/contact.php" method="post" role="form" class="contactForm">
 							  <div class="form-group">
 								<label for="name">Nome</label>
-								<input type="text" name="name" class="form-control" id="name" placeholder="Nome" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+								<input type="text" name="name" class="form-control" id="name" placeholder="Nome" data-rule="maxlen:4" data-msg="Por favor, entre com no mínino 4 caracteres." />
 								<div class="validation"></div>
 							  </div>
 							  <div class="form-group">
 								<label for="email">Email</label>
-								<input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+								<input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Por favor, entre com um email" />
 								<div class="validation"></div>
 							  </div>
 							  <div class="form-group">
 								<label for="subject">Assunto</label>
-								<input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
+								<input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" data-rule="maxlen:4" data-msg="Por favor, entre com no mínino 8 caracteres." />
 								<div class="validation"></div>
 							  </div>
 							  <div class="form-group">
 								<label for="message">Mensagem</label>
-								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor, escreva algo."></textarea>
 								<div class="validation"></div>
 							  </div>
 							  
