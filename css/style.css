@@ -9,7 +9,7 @@
   General
   ========================================================================== */
 body {
-	color:#777;
+	color: #777;
 	background: #f7f7f7;
 	font-size: 16px;
 	line-height: 1.6em;
@@ -19,6 +19,11 @@ body {
 
 .clear {
 	clear: both;
+}
+
+label, .label{
+	font-family: 'Lato', sans-serif;
+	font-size: 200%;
 }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -881,11 +886,13 @@ div.cform-response-output {
  ================= */
 
 section#footer {
-	background: #242424;
+	background: #A52A2A;/*#242424;*/
+	color: #ffffff;
 	margin: 0;
 }
 
 section#footer .copyright {
+	color: #ffffff;
 	text-align: center;
 }
 
@@ -941,7 +948,7 @@ a.scrollup:hover{
 	background-color: #F56505;
 }
 .social-network a.icoFacebook:hover {
-	background-color:#3B5998;
+	background-color: #3B5998;
 }
 .social-network a.icoTwitter:hover {
 	background-color:#33ccff;
