@@ -61,7 +61,7 @@ a:hover {
 
 .btn-cta:focus,.btn-cta:active{
    border-color: #35A49C;
-}
+}cd
 
 /* contact */
 .validation {
@@ -74,5 +74,5 @@ a:hover {
 }
 
 a.scrollup{
-	background:#35A49C;
+	background: #A52A2A;/*#35A49C;*/
 }

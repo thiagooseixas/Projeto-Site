@@ -308,7 +308,9 @@ a:hover {
 .mar-bot40 {
 	margin-bottom: 40px;
 }
-
+.mar-bot200 {
+	margin-bottom: 220px;
+}
 
 /*===========================
   --- Sections ----
@@ -318,6 +320,10 @@ section.section {
 	margin:0;
 	padding: 80px 0 60px 0;
 }
+section.section1 {
+	margin:0;
+	padding: 80px 0 240px 0;
+}
 
 .bg-white {
 	background-color: #fff;
@@ -326,6 +332,12 @@ section.section {
 /* --- section heading --- */
 .section-header {
 	text-align: center;
+	
+}
+.section-header-sobre {
+	text-align: center;
+	margin-top: 30%;
+
 }
 .section-header h2.section-heading {
 	text-transform: uppercase;
@@ -346,7 +358,11 @@ section.section {
 	background-image: url(../img/parallax/img3.jpg);
 }
 #principal{
-	background-image: url(../img/vortice_1.jpg);
+	background-image: url(../img/banner.jpg);
+	height: 10%;
+}
+#sgrede{
+	background-image: url(../img/sgrede.jpg);
 }
 /*===========================
   --- Header & menu ----
@@ -750,7 +766,7 @@ nav#filter a {
 	font-size: 18px;
 	font-family: Georgia, sans-serif;
 	line-height: 1.5em;
-}	
+}
 
 /*===========================
   --- Contact ----
@@ -867,6 +883,9 @@ div.cform-response-output {
 #map {
 	height: 500px;
 }
+#mapa {;
+	text-align: center;
+}
 
 
 /*====================
@@ -886,7 +905,7 @@ div.cform-response-output {
  ================= */
 
 section#footer {
-	background: #A52A2A;/*#242424;*/
+	background: #A52A2A;
 	color: #ffffff;
 	margin: 0;
 }
@@ -944,9 +963,7 @@ a.scrollup:hover{
 =========================== */
 
 /* footer social icons */
-.social-network a.icoRss:hover {
-	background-color: #F56505;
-}
+
 .social-network a.icoFacebook:hover {
 	background-color: #3B5998;
 }
@@ -956,18 +973,22 @@ a.scrollup:hover{
 .social-network a.icoGoogle:hover {
 	background-color:#BD3518;
 }
-.social-network a.icoVimeo:hover {
-	background-color:#0590B8;
-}
-.social-network a.icoLinkedin:hover {
-	background-color:#007bb7;
-}
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, 
-.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
 	color:#fff;
 }
 a.socialIcon:hover, .socialHoverClass {
 	color:#44BCDD;
+}
+
+.social-network a.icoFacebook {
+	background-color: #ffffff;
+}
+.social-network a.icoTwitter {
+	background-color:#ffffff;
+}
+.social-network a.icoGoogle {
+	background-color:#ffffff;
 }
 
 .social-circle li a {
@@ -1000,7 +1021,7 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.2s;
 }
 .social-circle i {
-	color: #fff;
+	color: #A52A2A;
 	-webkit-transition: all 0.8s;
 	-moz-transition: all 0.8s;
 	-o-transition: all 0.8s;
