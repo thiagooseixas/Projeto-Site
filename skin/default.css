@@ -49,7 +49,7 @@ a:hover {
 
 /* btn */
 .btn-theme {
-  background: #79CDC0;
+  background: #A52A2A;
 }
 .btn-theme:hover,.btn-theme:focus,.btn-theme:active{
   background: #35A49C;
@@ -61,7 +61,7 @@ a:hover {
 
 .btn-cta:focus,.btn-cta:active{
    border-color: #35A49C;
-}cd
+}
 
 /* contact */
 .validation {

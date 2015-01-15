@@ -643,7 +643,7 @@ nav#filter a {
 	color:#555;
 }
 nav#filter a:hover, nav#filter a.current {
-	background-color: #44BCDD;
+	background-color: #A52A2A;/*#44BCDD;*/
 	color:#fff;
 }
 
@@ -880,11 +880,12 @@ div.cform-response-output {
 }
 
 /* google map */
-#map {
-	height: 500px;
-}
-#mapa {;
+#mapa {
 	text-align: center;
+}
+.iframe-mapa{
+	width: 100%;
+	height: 500px;
 }
 
 
@@ -1096,10 +1097,11 @@ Media queries
 @media (max-width: 767px) {
 
 	.navbar.navbar-fixed-top {
-		background-color:rgba(0,0,0,1);
+		background-color: rgba(165,42,42, 1);/*rgba(0,0,0,1);*/
+		border-color: #ffffff;
 	}
 	.navbar .navbar-collapse ul.nav {
-		background-color: #444;
+		background-color:#A52A2A;
 		width: 100%;
 		float: none;
 		margin:0;
