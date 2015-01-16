@@ -15,6 +15,10 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/style.css">
+		<!-- Slider -->
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+		<script src="js/modernizr.js"></script>
+		<!-- /Slider -->
 		<!-- skin -->
 		<link rel="stylesheet" href="skin/default.css">
     </head>
@@ -35,39 +39,38 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
 						<li class="active"><a href="index.html">Ínicio</a></li>
+						<li><a href="javascript:void(0)">Nossas Soluções</a></li>
 
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+							<a href="#" class="dropdown-toggle" id="font-sobre" data-toggle="dropdown" role="button" aria-expanded="false">
 								Sobre<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#sobre">Empresa</a></li>
-								<li><a href="#missao-visao-valores">Missão, visão e valores</a></li>
-								<li><a href="#dados-cadastrais">Dados Cadastrais</a></li>
+								<li><a href="#sobre" id="dropdown-sobre">Empresa</a></li>
+								<li><a href="#missao-visao-valores" id="dropdown-sobre">Missão, visão e valores</a></li>
+								<li><a href="#dados-cadastrais" id="dropdown-sobre">Dados Cadastrais</a></li>
 							</ul>
 						</li>
 						<li><a href="clientes-parcerias.html">Clientes e Parcerias</a></li>
 						<li><a href="#contato">Contato</a></li>
 					</ul>
-				</div><!--/.navbar-collapse -->
+				</div><!--/Menu -->
 			</div>
 		</div>
-
-
-
-		 <!-- Banner -->
-		<section id="principal" class="section" data-stellar-background-ratio="0.5">
-		<div class="container">
-			<div class="row">
-					<div class="col-lg-12">
-							<div class="align-center">
-								<div class="principal pad-top40 pad-bot40 clearfix"></div>
-							</div>
-					</div>
-			</div>
-		</div>
-		</section>
-
+		<!-- Slider -->
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<a href="javascript:void(0)"><img src="img/parallax/img1.jpg" /></a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><img src="img/banner.jpg" /></a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"><img src="img/logo_vtinova.jpg" alt=""/></a>
+				</li>
+			</ul>
+        </div>
 		<!-- Serviços -->
 		<section id="section-services" class="section pad-bot30 bg-white">
 		<div class="container"> 
@@ -75,7 +78,7 @@
 			<div class="row mar-bot40">
 				<div class="col-lg-6" >
 					<div class="align-center">
-						<i class="fa fa-code fa-5x mar-bot20"></i>
+						<i class="fa fa-bolt fa-5x mar-bot20"></i>
 						<h4 class="text-bold">Sistema de Gestão de Rede Elétrica - SGRede</h4>
 						<p>
 							O Sistema de Gestão da Rede Elétrica- SGRede, é composto por Unidades Remotas (UR) de Aquisição de Dados, Software de Telessupervisão e Banco de Dados, que efetuam a supervisão, on-line e em tempo real, das condições de operação e funcionamento da rede elétrica e dos transformadores de distribuição da baixa tensão.
@@ -85,7 +88,7 @@
 					
 				<div class="col-lg-6" >
 					<div class="align-center">
-						<i class="fa fa-terminal fa-5x mar-bot20"></i>
+						<i class="fa fa-laptop fa-5x mar-bot20"></i>
 						<h4 class="text-bold">Sistema de Testes de Receptores de Satélite - STRSat</h4>
 						<p>
 							O Sistema de Teste de Receptores de Satélite – STRSat é composto por um Software de teste, banco de dados e um hardware modular, que efetuam os testes de forma automática de receptores de sinais de TV via satélite e cabo.
@@ -97,7 +100,8 @@
 					<div class="align-center">
 						<i class="fa fa-bolt fa-5x mar-bot20"></i>
 						<h4 class="text-bold">Customizable</h4>
-						<p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no.
+						<p>
+						Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no.
 						Mei cu dicat voluptaria volumus.
 						</p>
 					</div>
@@ -107,28 +111,6 @@
 
 		</div>
 		</section>
-
-		<!-- spacer section:testimonial
-		<section id="testimonials" class="section" data-stellar-background-ratio="0.5">
-		<div class="container">
-			<div class="row">				
-					<div class="col-lg-12">
-							<div class="align-center">
-										<div class="testimonial pad-top40 pad-bot40 clearfix">
-											<h5>
-												Nunc velit risus, dapibus non interdum quis, suscipit nec dolor. Vivamus tempor tempus mauris vitae fermentum. In vitae nulla lacus. Sed sagittis tortor vel arcu sollicitudin nec tincidunt metus suscipit.Nunc velit risus, dapibus non interdum.
-											</h5>
-											<br/>
-											<span class="author">&mdash; MIKE DOE <a href="#">www.siteurl.com</a></span>
-										</div>
-
-								</div>
-							</div>
-					</div>
-				
-			</div>	
-		</div>	
-		</section>-->
 			
 		<!-- Sobre -->
 		<section id="sobre" class="section1 appear clearfix">
@@ -141,7 +123,8 @@
 								A VTinova é uma empresa de base tecnológica, especializada no desenvolvimento de hardware e software embarcado.
 								Com tecnologias e produtos próprios a VTinova atualmente concentra seus esforços em duas divisões estratégicas de negócio: o mercado de energia e o mercado de automação industrial.
 								A VTinova é uma empresa brasileira sediada em Manaus, capital do estado do Amazonas.
-								Uma das metas da VTinova é a colocação do Amazonas no cenário dos estados provedores de tecnologias nacionais. </p>
+								Uma das metas da VTinova é a colocação do Amazonas no cenário dos estados provedores de tecnologias nacionais.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -182,11 +165,11 @@
 					<div class="col-md-offset-3 col-md-6">
 						<div class="section-header"><br><br><br><br>
 							<h2 class="section-heading animated" data-animation="bounceInUp">Dados Cadastrais</h2>
-							<p>
-								Razão Social: Vórtice Tecnologia em Projetos Eletrônicos LTDA.
-								Nome Fantasia: VTinova
-								CNPJ: 07.661.868/0001-81
-								Endereço: Avenida Presidente Kennedy, nº 885, Morro da Liberdade.
+								<p align="left" class="col-md-offset-1">
+								<label class="label-dados">Razão Social:</label> Vórtice Tecnologia em Projetos Eletrônicos LTDA.<br>
+								<label class="label-dados">Nome Fantasia:</label> VTinova<br>
+								<label class="label-dados">CNPJ:</label> 07.661.868/0001-81<br>
+								<label class="label-dados">Endereço:</label> Avenida Presidente Kennedy, nº 885, Morro da Liberdade.
 								Manaus/AM - CEP 69074-695.
 							</p>
 						</div>
@@ -205,156 +188,6 @@
             </div>
 			</div>	
 		</section>-->
-
-		<!-- Menu/Itens do Menu
-		<section id="section-works" class="section appear clearfix">
-			<div class="container">
-				
-				<div class="row mar-bot40">
-					<div class="col-md-offset-3 col-md-6">
-						<div class="section-header">
-							<h2 class="section-heading animated" data-animation="bounceInUp">Clientes e Parceiros</h2>
-
-						</div>
-					</div>
-				</div>
-					
-                        <div class="row">
-                          <nav id="filter" class="col-md-12 text-center">
-                            <ul>
-                              <li><a href="#" class="current btn-theme btn-small" data-filter="*">Tudo</a></li>
-                              <li><a href="#"  class="btn-theme btn-small" data-filter=".webdesign" >Clientes</a></li>
-                              <li><a href="#"  class="btn-theme btn-small" data-filter=".photography">Parceiros</a></li>
-                            </ul>
-                          </nav>
-                          <div class="col-md-12">
-                            <div class="row">
-                              <div class="portfolio-items isotopeWrapper clearfix" id="3">
-							  
-                                <article class="col-md-4 isotopeItem webdesign">
-									<div class="portfolio-item">
-										<img src="img/eletrobras.jpg" alt=""/>
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5>
-													<a href="http://www.eletrobrasamazonas.com/" target="_blank">
-														Eletrobras - Amazonas Energia
-													</a>
-												</h5>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<img src="img/fapeam.jpg" alt=""/>
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5>
-													<a href="http://www.fapeam.am.gov.br/" target="_blank">
-														FAPEAM -
-													</a>
-												</h5>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-								
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img3.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img3.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img4.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img4.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img5.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img5.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem webdesign">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img6.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img6.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img7.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img7.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem photography">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img8.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img8.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-
-                                <article class="col-md-4 isotopeItem print">
-									<div class="portfolio-item">
-										<img src="img/portfolio/img9.jpg" alt="" />
-										 <div class="portfolio-desc align-center">
-											<div class="folio-info">
-												<h5><a href="#">Portfolio name</a></h5>
-												<a href="img/portfolio/img9.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-											 </div>										   
-										 </div>
-									</div>
-                                </article>
-                                </div>
-                                        
-							</div>-->
-                                     
-
-							</div>
-                        </div>
-				
-			</div>
-		</section>
 
 		<!--
 		<section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">	
@@ -478,6 +311,42 @@
 	<script src="js/jquery.appear.js"></script>
 	<script src="js/validate.js"></script>
     <script src="js/main.js"></script>
+
+	<!-- SLIDER -->
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+	<!-- FlexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		  SyntaxHighlighter.all();
+		});
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	</script>
+	<!-- Syntax Highlighter -->
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/shBrushJScript.js"></script>
+	<!-- Optional FlexSlider Additions -->
+	<script src="js/jquery.easing.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script defer src="js/demo.js"></script>
+	<!-- /SLIDER -->
+	<script type="text/javascript">
+		function atualizar_ano(){
+			pega_ano = new Date();
+			ano = pega_ano.getYear();
+			alert(ano);
+		};
+	</script>
 
 	</body>
 </html>
